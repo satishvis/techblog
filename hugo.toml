@@ -1,0 +1,4 @@
+baseURL = 'https://satishvis.github.io'
+languageCode = 'en-us'
+title = "Satish Iyer's Tech Blog"
+theme = 'diary'

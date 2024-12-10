@@ -1,0 +1,9 @@
+[submodule "themes/diary"]
+	path = themes/diary
+	url = https://github.com/AmazingRise/hugo-theme-diary/
+[submodule "satishvis.github.io"]
+	path = satishvis.github.io
+	url = https://github.com/satishvis/satishvis.github.io.git
+[submodule "public"]
+	path = public
+	url = https://github.com/satishvis/satishvis.github.io.git
