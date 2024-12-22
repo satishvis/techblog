@@ -16,5 +16,5 @@ tags:
 
 # If your Arch Package manager gets locked
 
-
+This is an issue that I have encountered multiple times.
 Sometimes the @arch linux package gets locked so we need to unlock it using `sudo rm /var/lib/pacman/db.lck``
