@@ -17,18 +17,18 @@ tags:
 
 Making alias for @jrnl - j in my zsh.
 Earlier it was aliased to 'jobs-l'.
-Basic Usage
+# Basic Usage
 jrnl has two modes: composing and viewing. Basically, whenever you don't supply any arguments that start with a dash or double-dash, you're in composing mode, meaning you can write your entry on the command line or an editor of your choice.
 
 We intentionally break a convention on command line arguments: all arguments starting with a single dash will filter your journal before viewing it, and can be combined arbitrarily. Arguments with a double dash will control how your journal is displayed or exported and are mutually exclusive (ie. you can only specify one way to display or export your journal at a time).
 
-Listing Journals
+# Listing Journals
 You can list the journals accessible by jrnl
 
 jrnl -ls
 The journals displayed correspond to those specified in the jrnl configuration file.
 
-Composing Entries
+# Composing Entries
 Composing mode is entered by either starting jrnl without any arguments – which will prompt you to write an entry or launch your editor – or by just writing an entry on the prompt, such as
 
 jrnl today at 3am: I just met Steve Buscemi in a bar! He looked funny.
@@ -38,8 +38,10 @@ Most shell contains a certain number of reserved characters, such as # and *. Un
 
 You can also import an entry directly from a file
 
+
 jrnl < my_entry.txt
-Smart timestamps
+
+# Smart timestamps
 Timestamps that work:
 
 at 6am
@@ -58,11 +60,12 @@ If you don't want to add a date (ie. your entry will be dated as now), The follo
 jrnl *: Best day of my life.
 jrnl *Best day of my life.
 jrnl Best day of my life.*
-Note
+
+# Note
 
 Just make sure that the asterisk sign is not surrounded by whitespaces, e.g. jrnl Best day of my life! * will not work (the reason being that the * sign has a special meaning on most shells).
 
-Viewing
+# Viewing
 jrnl -n 10
 will list you the ten latest entries (if you're lazy, jrnl -10 will do the same),
 
@@ -82,11 +85,11 @@ Will print all entries in which either @pinkie or @WorldDomination occurred.
 jrnl -n 5 -and @pineapple @lubricant
 the last five entries containing both @pineapple and @lubricant. You can change which symbols you'd like to use for tagging in the configuration.
 
-Note
+## Note
 
 jrnl @pinkie @WorldDomination will switch to viewing mode because although no command line arguments are given, all the input strings look like tags - jrnl will assume you want to filter by tag.
 
-Editing older entries
+# Editing older entries
 You can edit selected entries after you wrote them. This is particularly useful when your journal file is encrypted. To use this feature, you need to have an editor configured in your journal configuration file (see advanced usage <advanced>)
 
 jrnl -until 1950 @texas -and @history --edit
@@ -99,7 +102,7 @@ You can also use this feature for deleting entries from your journal
 jrnl @girlfriend -until 'june 2012' --edit
 Just select all text, press delete, and everything is gone...
 
-Advanced Usage
+# Advanced Usage
 Configuration File
 You can configure the way jrnl behaves in a configuration file. By default, this is ~/.config/jrnl/jrnl.yaml. If you have the XDG_CONFIG_HOME variable set, the configuration file will be saved as $XDG_CONFIG_HOME/jrnl/jrnl.yaml.
 
@@ -133,7 +136,7 @@ jrnl "Implemented endless scrolling on the #frontend of our website."
 
 Or use the built-in prompt or an external editor to compose your entries.
 
-Multiple journal files
+# Multiple journal files
 You can configure jrnlto use with multiple journals (eg. private and work) by defining more journals in your jrnl.yaml, for example:
 
 journals:
@@ -160,7 +163,7 @@ Note
 
 Changing encrypt to a different value will not encrypt or decrypt your journal file, it merely says whether or not your journal is encrypted. Hence manually changing this option will most likely result in your journal file being impossible to load.
 
-Known Issues
+# Known Issues
 Unicode on Windows
 The Windows shell prior to Windows 7 has issues with unicode encoding. To use non-ascii characters, first tweak Python to recognize the encoding by adding 'cp65001': 'utf_8', to Lib/encoding/aliases.py. Then, change the codepage with chcp 1252 before using jrnl.
 
