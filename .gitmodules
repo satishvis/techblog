@@ -1,8 +1,8 @@
 [submodule "themes/dream"]
 	path = themes/dream
 	url = git@github.com:g1eny0ung/hugo-theme-dream
-	dirty = ignore
+	ignore = dirty
 [submodule "public"]
 	path = public
 	url = git@github.com:satishvis/satishvis.github.io.git
-	dirty = ignore
+	ignore = dirty
