@@ -5,9 +5,9 @@ lastmod: 2024-12-11T11:25:50+05:30
 author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
-cover: /img/cover.jpg
-# images:
-#   - /img/cover.jpg
+# cover: /img/cover.jpg
+images:
+  - /img/cover.jpg
 categories:
   - Hugo
 tags:

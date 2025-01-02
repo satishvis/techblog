@@ -5,9 +5,9 @@ lastmod: 2024-12-11T11:25:50+05:30
 author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
-cover: /img/cover.jpg
-# images:
-#   - /img/cover.jpg
+# cover: /img/cover.jpg
+images:
+  - /img/cover.jpg
 categories:
   - Hugo
 tags:
@@ -17,31 +17,35 @@ tags:
 
 Making alias for @jrnl - j in my zsh.
 Earlier it was aliased to 'jobs-l'.
+
 # Basic Usage
+
 jrnl has two modes: composing and viewing. Basically, whenever you don't supply any arguments that start with a dash or double-dash, you're in composing mode, meaning you can write your entry on the command line or an editor of your choice.
 
 We intentionally break a convention on command line arguments: all arguments starting with a single dash will filter your journal before viewing it, and can be combined arbitrarily. Arguments with a double dash will control how your journal is displayed or exported and are mutually exclusive (ie. you can only specify one way to display or export your journal at a time).
 
 # Listing Journals
+
 You can list the journals accessible by jrnl
 
 jrnl -ls
 The journals displayed correspond to those specified in the jrnl configuration file.
 
 # Composing Entries
+
 Composing mode is entered by either starting jrnl without any arguments – which will prompt you to write an entry or launch your editor – or by just writing an entry on the prompt, such as
 
 jrnl today at 3am: I just met Steve Buscemi in a bar! He looked funny.
 Note
 
-Most shell contains a certain number of reserved characters, such as # and *. Unbalanced quotes, parenthesis, and so on will also get into the way of your editing. For writing longer entries, just enter jrnl and hit return. Only then enter the text of your journal entry. Alternatively, use an external editor <advanced>).
+Most shell contains a certain number of reserved characters, such as # and \*. Unbalanced quotes, parenthesis, and so on will also get into the way of your editing. For writing longer entries, just enter jrnl and hit return. Only then enter the text of your journal entry. Alternatively, use an external editor <advanced>).
 
 You can also import an entry directly from a file
-
 
 jrnl < my_entry.txt
 
 # Smart timestamps
+
 Timestamps that work:
 
 at 6am
@@ -54,18 +58,19 @@ sunday at noon
 Starring entries
 To mark an entry as a favourite, simply "star" it
 
-jrnl last sunday *: Best day of my life.
+jrnl last sunday \*: Best day of my life.
 If you don't want to add a date (ie. your entry will be dated as now), The following options are equivalent:
 
 jrnl *: Best day of my life.
 jrnl *Best day of my life.
-jrnl Best day of my life.*
+jrnl Best day of my life.\*
 
 # Note
 
-Just make sure that the asterisk sign is not surrounded by whitespaces, e.g. jrnl Best day of my life! * will not work (the reason being that the * sign has a special meaning on most shells).
+Just make sure that the asterisk sign is not surrounded by whitespaces, e.g. jrnl Best day of my life! _ will not work (the reason being that the _ sign has a special meaning on most shells).
 
 # Viewing
+
 jrnl -n 10
 will list you the ten latest entries (if you're lazy, jrnl -10 will do the same),
 
@@ -90,6 +95,7 @@ the last five entries containing both @pineapple and @lubricant. You can change 
 jrnl @pinkie @WorldDomination will switch to viewing mode because although no command line arguments are given, all the input strings look like tags - jrnl will assume you want to filter by tag.
 
 # Editing older entries
+
 You can edit selected entries after you wrote them. This is particularly useful when your journal file is encrypted. To use this feature, you need to have an editor configured in your journal configuration file (see advanced usage <advanced>)
 
 jrnl -until 1950 @texas -and @history --edit
@@ -103,6 +109,7 @@ jrnl @girlfriend -until 'june 2012' --edit
 Just select all text, press delete, and everything is gone...
 
 # Advanced Usage
+
 Configuration File
 You can configure the way jrnl behaves in a configuration file. By default, this is ~/.config/jrnl/jrnl.yaml. If you have the XDG_CONFIG_HOME variable set, the configuration file will be saved as $XDG_CONFIG_HOME/jrnl/jrnl.yaml.
 
@@ -137,11 +144,12 @@ jrnl "Implemented endless scrolling on the #frontend of our website."
 Or use the built-in prompt or an external editor to compose your entries.
 
 # Multiple journal files
+
 You can configure jrnlto use with multiple journals (eg. private and work) by defining more journals in your jrnl.yaml, for example:
 
 journals:
-  default: ~\journal.txt
-  work: ~\work.txt
+default: ~\journal.txt
+work: ~\work.txt
 The default journal gets created the first time you start jrnl Now you can access the work journal by using jrnl work instead of jrnl, eg.
 
 jrnl work at 10am: Meeting with @Steve
@@ -154,8 +162,8 @@ encrypt: false
 journals:
 default: ~/journal.txt
 work:
-  journal: ~/work.txt
-  encrypt: true
+journal: ~/work.txt
+encrypt: true
 food: ~/my_recipes.txt
 Your default and your food journals won't be encrypted, however your work journal will! You can override all options that are present at the top level of jrnl.yaml, just make sure that at the very least you specify a journal: ... key that points to the journal file of that journal.
 
@@ -164,7 +172,6 @@ Note
 Changing encrypt to a different value will not encrypt or decrypt your journal file, it merely says whether or not your journal is encrypted. Hence manually changing this option will most likely result in your journal file being impossible to load.
 
 # Known Issues
+
 Unicode on Windows
 The Windows shell prior to Windows 7 has issues with unicode encoding. To use non-ascii characters, first tweak Python to recognize the encoding by adding 'cp65001': 'utf_8', to Lib/encoding/aliases.py. Then, change the codepage with chcp 1252 before using jrnl.
-
-

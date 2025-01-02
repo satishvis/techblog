@@ -5,9 +5,9 @@ lastmod: 2024-12-11T11:25:50+05:30
 author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
-cover: /img/cover.jpg
-# images:
-#   - /img/cover.jpg
+# cover: /img/cover.jpg
+images:
+  - /img/cover.jpg
 categories:
   - Hugo
 tags:
@@ -23,10 +23,10 @@ git@bitbucket.org:<repo_owner>/<reponame>.git
 
 Now one is ready to test it in any repository Good to go
 
-
 The following to be done before
 
 <!--more-->
+
 ```shell
 > eval `ssh-agent -s`
 
@@ -38,6 +38,7 @@ $> ssh-add id_rsa_bitbucket
 $> ssh -T bb
 $> vim config ---> to write the config
 ```
+
 The config file should look like this:
 
 ```
@@ -47,5 +48,3 @@ The config file should look like this:
   User git
   IdentityFile ~/.ssh/id_rsa_bitbucket
 ```
-
-

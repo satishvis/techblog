@@ -5,9 +5,9 @@ lastmod: 2024-12-11T10:18:35+05:30
 author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
-cover: /img/cover.jpg
-# images:
-#   - /img/cover.jpg
+# cover: /img/cover.jpg
+images:
+  - /img/cover.jpg
 categories:
   - Hugo
 tags:
@@ -24,5 +24,6 @@ tags:
 zsh -d -f ;
 
 ```
+
 Explaination:
 -f is local rc and -d is global rcs
