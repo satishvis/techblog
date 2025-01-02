@@ -15,6 +15,7 @@ theme = 'dream'
 
 lightTheme = "emerald"
 darkTheme = "forest"
+noDefaultSummaryCover = true
 
 # backgroundImage = "me/background.jpg"
 # backgroundImageDark = ""
