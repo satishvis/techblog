@@ -1,10 +1,10 @@
 ---
-date: '2024-12-10T19:48:25+05:30'
-title: 'Arch Update Gets Locked'
+date: "2024-12-10T19:48:25+05:30"
+title: "Arch Update Gets Locked"
 author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
-cover: /img/cover.jpg
+cover: /imagesg/cover.jpg
 # images:
 #   - /img/cover.jpg
 categories:
