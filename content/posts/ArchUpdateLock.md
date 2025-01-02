@@ -4,9 +4,9 @@ title: "Arch Update Gets Locked"
 author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
-cover: /img/cover.jpg
-# images:
-#   - /img/cover.jpg
+# cover: /img/cover.jpg
+images:
+  - /img/cover.jpg
 categories:
   - Hugo
 tags:
