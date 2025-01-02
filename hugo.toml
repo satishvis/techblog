@@ -1,0 +1,68 @@
+baseURL = 'https://satishvis.github.io'
+languageCode = 'en-us'
+title = "Satish Iyer's Tech Blog"
+theme = 'dream'
+
+
+# [services]
+# [services.disqus]
+# shortname = ""
+# [services.googleAnalytics]
+# ID = ""
+
+[params]
+# zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "me/background.jpg"
+# backgroundImageDark = ""
+
+author = "Satish Iyer"
+description = "A dreamer..."
+avatar = "img/author.jpg"
+headerTitle = "Satish Iyer's Tech Blog"
+# motto = ""
+
+# footerBottomText = ""
+
+# rss = true
+
+# utterancesRepo = ""
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+email = "satishvis@proton.me"
+
+siteStartYear = 2024
+
+favicon = "/img/favicon.ico"
+
+# Syntax highlighting
+# customSyntaxHighlighting = true
+
+# options
+# stickyNav = true
+# reorderNavItems = ["search", "rss", "posts", "categories", "tags"]
+# collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+# showTableOfContents = true
+# showSummaryCoverInPost = true
+# showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+# [params.navItems]
+
+# [params.advanced]
+# customCSS = ["css/custom.css"]
+# customJS = []
+
+# [params.experimental]
+# jsDate = true
+# jsDateFormat = "yyyy-MM-dd"
