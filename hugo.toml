@@ -21,8 +21,9 @@ noDefaultSummaryCover = true
 # backgroundImageDark = ""
 
 author = "Satish Iyer"
+authorlink = "https:satishvis.github.io"
 description = "A dreamer..."
-avatar = "img/author.jpg"
+avatar = "img/avatar.jpg"
 headerTitle = "Satish Iyer's Tech Blog"
 # motto = ""
 
