@@ -16,7 +16,7 @@ tags:
 draft: false
 ---
 
-Anki is a free and open-source flashcard application.
+[Anki](https://apps.ankiweb.net) is a free and open-source flashcard application.
 It is available to linux and it can be edited and synced with your Android mobile.
 
 <!--more-->
