@@ -1,0 +1,22 @@
+---
+title: Anki
+date: 2026-05-20T13:29:31+05:30
+lastmod: 2026-05-20T13:29:31+05:30
+author: Satish Viswanathan
+# avatar: /img/author.jpg
+# authorlink: https://author.site
+cover: /img/Anki.webp
+# images:
+#   - /img/cover.jpg
+categories:
+  - Study
+tags:
+  - flashcard
+# nolastmod: true
+draft: false
+---
+
+Anki is a free and open-source flashcard application.
+It is available to linux and it can be edited and synced with your Android mobile.
+
+<!--more-->
