@@ -2,7 +2,16 @@ baseURL = 'https://satishvis.github.io'
 locale = 'en-in'
 title = "Satish Iyer's Tech Blog"
 theme = 'dream'
+ignoreLogs = ['warning-42']
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
 
 # [services]
 # [services.disqus]
@@ -27,7 +36,6 @@ avatar = "img/author.jpg"
 headerTitle = "Satish Iyer's Tech Blog"
 # motto = ""
 
-ignoreLogs = ['warning-goldmark-raw-html']
 # footerBottomText = ""
 
 # rss = true

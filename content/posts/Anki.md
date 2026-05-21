@@ -3,7 +3,7 @@ title: Anki
 date: 2026-05-20T13:29:31+05:30
 lastmod: 2026-05-20T13:29:31+05:30
 author: Satish Viswanathan
-avatar: /img/avatar.jpg
+avatar: /img/avatar.png
 authorlink: https://satishvis.github.io
 cover: /img/Anki.webp
 # images:
