@@ -1,5 +1,5 @@
 baseURL = 'https://satishvis.github.io'
-languageCode = 'en-us'
+locale = 'en-in'
 title = "Satish Iyer's Tech Blog"
 theme = 'dream'
 
@@ -27,6 +27,7 @@ avatar = "img/author.jpg"
 headerTitle = "Satish Iyer's Tech Blog"
 # motto = ""
 
+ignoreLogs = ['warning-goldmark-raw-html']
 # footerBottomText = ""
 
 # rss = true
