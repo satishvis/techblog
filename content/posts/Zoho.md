@@ -26,4 +26,16 @@ The question however is will I be able to switch to it totally?
 
 <!--more-->
 
-The remaining content of your post.
+It has a suite of tools just like Google and each one is very nicely made.
+I am planning on using the Notebook tool, which will be my replacement for Keep.
+Have taken the `pro` pack. Which will enable me to organize my stuff better.
+I also plan to use the Zohomail as my main email account.
+Other apps include
+- Zoho Todo
+- Writer
+- Sheet
+- Show
+- Workdrive
+- Meeting
+
+As you can see and the names suggest, this is really powerful tool.
