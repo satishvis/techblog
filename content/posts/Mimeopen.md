@@ -5,7 +5,7 @@ lastmod: 2026-05-23T18:31:17+05:30
 author: Satish Viswanathan
 # avatar: /img/author.jpg
 # authorlink: https://author.site
-cover: /img/mimeopen.webp
+cover: /img/mimeopen.jpg
 # covercaption: a description of the cover image
 # images:
 #   - /img/cover.jpg
