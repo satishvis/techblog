@@ -1,10 +1,10 @@
 ---
-title: Mimeopen
+title: mimeopen
 date: 2026-05-23T18:31:17+05:30
 lastmod: 2026-05-23T18:31:17+05:30
-author: Satish Viswanathan
-# avatar: /img/author.jpg
-# authorlink: https://author.site
+author: Satish Iyer
+avatar: /img/author.jpg
+authorlink: https://satishvis.github.io
 cover: /img/mimeopen.jpg
 # covercaption: a description of the cover image
 # images:
@@ -42,5 +42,3 @@ rifle -p 0 app.py
 rifle -p 4 app.py
 
 `konsole` @konsole is beautiful to work with the defaults are very nice. Nice and compact.
-
-The remaining content of your post.

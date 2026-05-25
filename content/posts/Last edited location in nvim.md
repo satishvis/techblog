@@ -2,7 +2,7 @@
 title: Last Edited Location in Nvim
 date: 2026-05-19T16:41:54+05:30
 lastmod: 2026-05-19T16:41:54+05:30
-author: Satish Viswanathan
+author: Satish Iyer
 avatar: /img/author.jpg
 authorlink: https://satishvis.github.io
 cover: /img/neovim.jpg

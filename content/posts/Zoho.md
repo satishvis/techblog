@@ -2,9 +2,9 @@
 title: Zoho
 date: 2026-05-22T17:24:54+05:30
 lastmod: 2026-05-22T17:24:54+05:30
-author: Satish Viswanathan
-# avatar: /img/author.jpg
-# authorlink: https://author.site
+author: Satish Iyer
+avatar: /img/author.jpg
+authorlink: https://satishvis.github.io
 cover: /img/Zoho.jpg
 # covercaption: a description of the cover image
 # images:
@@ -31,6 +31,7 @@ I am planning on using the Notebook tool, which will be my replacement for Keep.
 Have taken the `pro` pack. Which will enable me to organize my stuff better.
 I also plan to use the Zohomail as my main email account.
 Other apps include
+
 - Zoho Todo
 - Writer
 - Sheet
