@@ -19,4 +19,4 @@ tags:
 draft: false
 ---
 
-`ncdu` is a beautiful @terminal ncurses program to find disk usage.If you need to check the usage of a particular folder the command is ncdu -x /home. Another option in @golang for the same functionality is `gdu`. Faster abd more colorful.
+`ncdu` is a beautiful @terminal ncurses program to find disk usage.If you need to check the usage of a particular folder the command is ncdu -x /home. Another option in @golang for the same functionality is `gdu`. Faster and more colorful.
