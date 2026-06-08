@@ -3,8 +3,8 @@ title: Desk Cli App
 date: 2026-06-08T08:44:54+05:30
 lastmod: 2026-06-08T08:44:54+05:30
 author: Satish Iyer
-# avatar: /img/author.jpg
-# authorlink: https://author.site
+avatar: /img/author.jpg
+authorlink: https://satishvis.github.io
 cover: /img/desk.jpg
 # covercaption: a description of the cover image
 # images:
@@ -27,6 +27,8 @@ stored
 
 `desk ls` to list all desks available. One per project.
 
+<!--more-->
+
 Use `desk edit <name>` to edit the sh file
 
 ```
@@ -36,7 +38,6 @@ Use `desk edit <name>` to edit the sh file
 └── letters.sh
 ```
 
-<!--more-->
 
 Example of the book.sh file:
 
